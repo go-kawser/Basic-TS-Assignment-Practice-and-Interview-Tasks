@@ -62,6 +62,17 @@
     }
   }
   const myCar = new Car("Toyota", 2000, "Corolla");
-  console.log(myCar.getInfo());
-  console.log(myCar.getModel());
+}
+//
+{
+  // problem solved---->05
+  function processValue(value: string | number): number {
+    if (typeof value === "string") {
+      return value.length;
+    } else if (typeof value === "number") {
+      return value * 2;
+    } else {
+      return 0;
+    }
+  }
 }
