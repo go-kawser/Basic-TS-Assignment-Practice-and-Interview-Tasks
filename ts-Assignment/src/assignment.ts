@@ -108,3 +108,20 @@
     { name: "smartWatch", price: 4000 },
   ];
 }
+//
+{
+  // problem solved---->07
+  enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday,
+  }
+
+  function getDayType(day: Day): string {
+    return day >= Day.Monday && day <= Day.Sunday ? "Weekday" : "Weekend";
+  }
+}
