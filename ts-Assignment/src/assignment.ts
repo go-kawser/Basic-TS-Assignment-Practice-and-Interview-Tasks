@@ -20,9 +20,18 @@
     { title: "Book d", rating: 3.999 },
     { title: "Book e", rating: 10 },
   ];
-  console.log(filterByRating(books));
 }
 //
 {
-  // problem solved---->01
+  // problem solved---->03
+  function concatenateArrays<T>(...arrays: T[][]): T[] {
+    const concatenate: T[] = [];
+    for (const array of arrays) {
+      concatenate.push(...array);
+    }
+    return concatenate;
+  }
+  concatenateArrays(["a", "b"], ["c"]);
+  concatenateArrays([1, 2], [3, 4], [5]);
+  concatenateArrays(["muhammad"], ["islam"]);
 }
